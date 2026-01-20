@@ -155,7 +155,7 @@ function MonkeySpeed_OnUpdate(arg1)
 				((MonkeySpeed.m_vLastPos.y - MonkeySpeed.m_vCurrPos.y) * (MonkeySpeed.m_vLastPos.y - MonkeySpeed.m_vCurrPos.y)));
 		
 		MonkeySpeed.m_fSpeedDist = MonkeySpeed.m_fSpeedDist + dist;
-		if (MonkeySpeed.m_iDeltaTime >= .1) then
+		if (MonkeySpeed.m_iDeltaTime >= .02) then
 
 			-- The map coords seem to be a different scale in different zones. Figure out which zone we're in
 			local zonenum;
@@ -316,3 +316,4 @@ function MonkeySpeedOptions()
 	end
 
 end
+
